@@ -3,19 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.shoot.mimi</groupId>
 	<artifactId>shoot-mimi-portal</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>shoot-mimi-portal</name>
 	<description>mimi project portal</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.shoot.mimi</groupId>
+		<artifactId>shoot-mimi-parent</artifactId>
+		<version>${current.version}</version>
+		<relativePath>../shoot-mimi-parent/pom.xml</relativePath> 
 	</parent>
 
 	<properties>

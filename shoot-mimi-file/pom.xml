@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>com.shoot.mimi</groupId>
 		<artifactId>shoot-mimi-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>${current.version}</version>
 		<relativePath>../shoot-mimi-parent/pom.xml</relativePath> 
 	</parent>
 
