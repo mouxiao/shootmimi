@@ -112,4 +112,10 @@
 	</build>
 
 
+	<modules>
+		<module>../shoot-mimi-common</module>
+		<module>../shoot-mimi-eureka-server</module>
+		<module>../shoot-mimi-file</module>
+		<module>../shoot-mimi-portal</module>
+	</modules>
 </project>
