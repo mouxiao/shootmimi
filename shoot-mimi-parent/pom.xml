@@ -5,7 +5,7 @@
 
 	<groupId>com.shoot.mimi</groupId>
 	<artifactId>shoot-mimi-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${current.version}</version>
 	<packaging>pom</packaging>
 
 	<name>shoot-mimi-parent</name>
@@ -112,4 +112,10 @@
 	</build>
 
 
+	<modules>
+		<module>../shoot-mimi-common</module>
+		<module>../shoot-mimi-eureka-server</module>
+		<module>../shoot-mimi-file</module>
+		<module>../shoot-mimi-portal</module>
+	</modules>
 </project>
