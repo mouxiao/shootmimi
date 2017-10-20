@@ -6,17 +6,13 @@
 	<artifactId>shoot-mimi-common</artifactId>
 	<packaging>jar</packaging>
 
-	<name>shoot-mimi-common</name>
-	<description>mimi project commons</description>
-
 	<parent>
 		<groupId>com.shoot.mimi</groupId>
 		<artifactId>shoot-mimi-parent</artifactId>
 		<version>${current.version}</version>
 		<relativePath>../</relativePath>
 	</parent>
-
-
+	
 	<dependencies>
 	
 	</dependencies>
