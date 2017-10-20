@@ -6,9 +6,6 @@
 	<artifactId>shoot-mimi-portal</artifactId>
 	<packaging>war</packaging>
 
-	<name>shoot-mimi-portal</name>
-	<description>mimi project portal</description>
-
 	<parent>
 		<groupId>com.shoot.mimi</groupId>
 		<artifactId>shoot-mimi-parent</artifactId>
@@ -16,13 +13,15 @@
 		<relativePath>../</relativePath>
 	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
 
 	<dependencies>
+		
+		<dependency>
+			<groupId>com.shoot.mimi</groupId>
+			<artifactId>shoot-mimi-common</artifactId>
+			<version>${current.version}</version>
+		</dependency>
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
