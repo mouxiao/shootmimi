@@ -6,7 +6,6 @@ import org.mybatis.spring.annotation.MapperScan;
 
 import com.shoot.mimi.portal.entity.PlaUser;
 
-@MapperScan
 public interface PlaUserService {
 	
 	public PlaUser getUserByUserNameAndPassword(Map<String, Object> map);
