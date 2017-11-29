@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shoot.mimi.portal.mapper.PlaUserMapper">
+
+	<resultMap id="queryResultMap" type="com.shoot.mimi.portal.entity.PlaUser">
+		<result column="ID_" property="id"/>
+		<result column="USER_ACCOUNT_" property="userAccount" />
+		<result column="USER_NAME_" property="userName" />
+		<result column="NICK_NAME_" property="nickName"/>
+		<result column="STATUS_" property="status" />
+		<result column="EMAIL_" property="email" />
+		<result column="PHONE_" property="phone" />
+		<result column="DESCRIPTION_" property="description"/>
+		<result column="PIC_URL_" property="picUrl" />
+		<result column="PASSWORD_" property="password" />
+	</resultMap>
+
+	<select id="getUserByUserName" parameterType="String" resultType="com.shoot.mimi.portal.entity.PlaUser">
+		select * from PLA_USER_ where USER_NAME_ = #{userName}
+	</select>
+	
+</mapper>

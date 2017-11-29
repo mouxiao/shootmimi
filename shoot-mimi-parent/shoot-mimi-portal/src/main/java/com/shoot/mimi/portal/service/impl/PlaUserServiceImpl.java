@@ -15,7 +15,7 @@ public class PlaUserServiceImpl implements PlaUserService{
 	
 	@Override
 	public PlaUser getUserByUserNameAndPassword(String userName) {
-		return userMapper.getUserOne(userName);
+		return userMapper.getUserByUserName(userName);
 	}
 
 }
