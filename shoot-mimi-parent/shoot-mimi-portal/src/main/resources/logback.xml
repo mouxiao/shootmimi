@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <Pattern>%d{HH:mm:ss} %-5level %logger{35} - %msg%n
-            </Pattern>
-        </encoder>
-    </appender>
-    <logger name="com.shoot.mimi.portal.mapper.PlaUserMapper" level="DEBUG" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-    <root>
-        <level value="ERROR" />
-        <appender-ref ref="STDOUT" />
-    </root>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%d{HH:mm:ss} %-5level %logger{35} - %msg%n</Pattern>
+		</encoder>
+	</appender>
+	<logger name="com.shoot.mimi.portal.mapper.PlaUserMapper" level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="STDOUT" />
+	</root>
 </configuration>

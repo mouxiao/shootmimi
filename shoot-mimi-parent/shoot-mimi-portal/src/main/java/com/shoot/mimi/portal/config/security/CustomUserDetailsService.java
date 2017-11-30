@@ -16,11 +16,8 @@ public class CustomUserDetailsService implements UserDetailsService{
 	
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-		
 		PlaUser user = plaUserService.getUserByUserNameAndPassword(userName);
-		Assert.isNull(user, "该用户名不存在!");
-		
-		System.out.println("-----------------------------------------------------------");
+		Assert.notNull(user, "该用户不存在");
 		return user;
 	}
 

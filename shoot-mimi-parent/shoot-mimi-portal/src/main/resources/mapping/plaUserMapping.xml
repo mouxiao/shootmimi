@@ -16,7 +16,7 @@
 		<result column="PASSWORD_" property="password" />
 	</resultMap>
 
-	<select id="getUserByUserName" parameterType="String" resultType="com.shoot.mimi.portal.entity.PlaUser">
+	<select id="getUserByUserName" parameterType="String" resultMap="queryResultMap">
 		select * from PLA_USER_ where USER_NAME_ = #{userName}
 	</select>
 	

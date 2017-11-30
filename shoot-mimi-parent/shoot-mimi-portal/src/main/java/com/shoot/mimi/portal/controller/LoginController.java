@@ -12,7 +12,6 @@ package com.shoot.mimi.portal.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -23,12 +22,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 1.0.0
  */
 @Controller
-@RequestMapping("/user")
 public class LoginController {
 
-    @GetMapping({"/login"})
-    public String login() {
-        return "user/index";
-    }
+//    @GetMapping({"/login"})
+//    public String login() {
+//        return "login";
+//    }
 
 }
